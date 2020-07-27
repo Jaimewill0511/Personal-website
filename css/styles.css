@@ -41,11 +41,11 @@ h2 {
 
 h3 {
   font-family: 'Montserrat', sans-serif;
-  color: #11999E;
+  color: #663300;
 }
 
 p {
-
+  color: #663300;
   line-height: 2;
 }
 
@@ -165,7 +165,11 @@ span {
 
 
 @media (max-width: 1028px) {
-
+.head1 {
+  position: relative;
+  bottom: 70px;
+  font-size: 7rem;
+}
 
 
 .mountain {
@@ -186,6 +190,7 @@ hr {
   width: 100%;
 }
 .Topcontainer {
-
-  background-size: contain;}
+  padding-bottom: 0;
+  background-size: contain;
+}
 }
