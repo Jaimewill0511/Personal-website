@@ -4,56 +4,105 @@
 <head>
   <meta charset="utf-8">
   <title>Binitie William - a web designer & developer</title>
-  <link rel="stylesheet" href="css/styles.css">
+
   <link rel="icon" href="favicon1.ico">
+
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- google fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Parisienne&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+  <!-- Javascript  -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="Topcontainer">
-    <img class="top_cloud" src="Images/cloud.png" alt="cloud-img">
-    <h1>I'm William</h1>
-    <h2><p class="heading2" >a <span>pro</span>grammer</p></h2>
-    <img class="bottom_cloud" src="Images/cloud.png" alt="cloud-img">
-    <img class="mountain" src="Images/mountain.png" alt="mountain-img">
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img class="pp" src="Images/pp.jpg" alt="binitie-william">
-      <h2>Hello.</h2>
-      <p class="intro">I'm a web designer / developer based in Lagos, Nigeria. I have a passion for web design and love to create for web and mobile devices.</p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-          <img class="code_img" src="Images/download.png" alt="coding">
-        <h3 class="left">Web Design and development</h3>
-        <p class="description">I've loved coding for as long as I can remember because I wanted to make my own video games. My goals focus on giving you what you want in the most beatiful way possible whilst conveying the message that you want to send.</p>
-      </div>
-      <div class="skill-row">
-        <img class="think_img" src="Images/think.png" alt="HTML">
 
 
-        <h3>I'll design what you need</h3>
-        <p class="description" >I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</p>
-      </div>
-    </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>I’m currently available for freelance work.</h3>
-      <p class="intro">If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
-      <br>
-      <a href="mailto:binitiewilliam@yahoo.com" class="BUTTON_WKM">CONTACT ME</a>
+  <section class="coloured_section">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar  navbar-expand-lg navbar-light navb">
+        <a class="navbar-brand navb" href="">
+          <img src="Images/favicon-32x32.png" width="32" height="32" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navb" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#middle">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="Topcontainer">
+      <!-- <img class="top_cloud" src="Images/cloud.png" alt="cloud-img"> -->
+      <h1>I'm William</h1>
+      <h2><p class="heading2" >a <span>pro</span>grammer</p></h2>
+      <!-- <img class="bottom_cloud" src="Images/cloud.png" alt="cloud-img"> -->
+      <!-- <img class="mountain" src="Images/Flat-Vector-Landscape.png" alt="mountain-img"> -->
     </div>
   </div>
+  </section>
+
+
+  <div class="container" id = "middle" >
+    <div class="middle-container">
+      <div class="profile">
+        <img class="pp" src="Images/pp.jpg" alt="binitie-william">
+        <h2>Hello.</h2>
+        <p class="intro">I'm a web designer / developer based in Lagos, Nigeria. I have a passion for web design and love to create for web and mobile devices.</p>
+      </div>
+      <hr>
+      <div class="skills" id="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row" >
+            <img class="code_img" src="Images/download.png" alt="coding">
+          <h3 class="left">Web design & development</h3>
+          <p class="description">I've loved coding for as long as I can remember because I wanted to make my own video games. My goals focus on giving you what you want in the most beatiful way possible whilst conveying the message that you want to send.</p>
+        </div>
+        <div class="skill-row">
+          <img class="think_img" src="Images/think.png" alt="HTML">
+
+
+          <h3>I'll design what you need</h3>
+          <p class="description" >I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me" id="contact">
+        <h2>Get In Touch</h2>
+        <h3>I’m currently available for freelance work.</h3>
+        <p class="intro">If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+        <br>
+        <a href="mailto:binitiewilliam@yahoo.com" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">CONTACT ME</a>
+      </div>
+    </div>
+  </div>
+
 
 
   <div class="bottom-container">
     <a class="footer-link" href="https://www.linkedin.com/in/william-binitie-45aa45138/">LinkedIn</a>
     <a class="footer-link" href="https://twitter.com/JaimeofLagos">Twitter</a>
-    <a class=" footer-link" href="https://www.appbrewery.co/">Website</a>
+    <a class=" footer-link" href="">Website</a>
     <p class="footer-text">© 2020 William Binitie.</p>
   </div>
 

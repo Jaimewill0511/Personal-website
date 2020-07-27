@@ -27,7 +27,7 @@ hr {
 h1 {
   margin: 50px auto 0 auto;
   font-family: 'Parisienne', cursive;
-  color: #66BFBF;
+  color: #663300;
   font-size: 5.625rem;
   /**** use this cus its adaptable and its not affected by parent settings */
 }
@@ -35,7 +35,7 @@ h1 {
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
-  color: #66BFBF;
+  color: #663300;
   padding-bottom: 10px;
 }
 
@@ -60,6 +60,11 @@ span {
   padding-bottom: 20px;
 }
 
+.navb {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .bottom_cloud {
   position: absolute;
   bottom: 300px;
@@ -74,6 +79,7 @@ span {
 
 .description {
   color: #40514E;
+  text-align: left;
 }
 
 .footer-link {
@@ -83,45 +89,9 @@ span {
   padding-top: 25px;
 }
 
-.BUTTON_WKM {
-  background: #3D94F6;
-  background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
-  background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
-  background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
-  background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
-  background-image: linear-gradient(to bottom, #3D94F6, #1E62D0);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 8px;
-  color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  font-weight: 100;
-  padding: 24px;
-  box-shadow: 1px 1px 20px 0 #000000;
-  -webkit-box-shadow: 1px 1px 20px 0 #000000;
-  -moz-box-shadow: 1px 1px 20px 0 #000000;
-  text-shadow: 1px 1px 20px #000000;
-  border: solid #337FED 1px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-}
 
-.BUTTON_WKM:hover {
-  border: solid #337FED 1px;
-  background: #1E62D0;
-  background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
-  background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
-  background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
-  background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
-  background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  text-decoration: none;
-}
+
+
 
 .footer-text {
   color: #EAF6F6;
@@ -133,7 +103,7 @@ span {
   font-weight: normal;
 }
 
-.left {}
+
 
 .intro {
   width: 30%;
@@ -147,6 +117,7 @@ span {
 
 .mountain {
   display: inline-block;
+
 }
 
 
@@ -170,17 +141,51 @@ span {
   margin-left: 30px;
 }
 
+
+.coloured_section {
+    background-color: #E4F9F5;
+}
 .Topcontainer {
-  background-color: #E4F9F5;
+  background-image: url("../Images/bi.jpg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   position: relative;
-  padding-top: 100px;
+  padding: 200px 150px;
 }
 
 .top_cloud {
   position: absolute;
   top: 40px;
   right: 300px;
+}
+
+
+@media (max-width: 1028px) {
+
+
+
+.mountain {
+    margin: auto ;
+
+}
+.description {
+  width: 100%;
+}
+.intro{
+  width: 100%;
+}
+
+hr {
+  width: 10%;
+}
+.skill-row {
+  width: 100%;
+}
+.Topcontainer {
+
+  background-size: contain;}
 }
